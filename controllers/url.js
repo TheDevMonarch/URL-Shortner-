@@ -5,7 +5,7 @@ export const shortUrl =async(req, res) => {
   const longUrl = req.body.longUrl;
   const shortCode = shortid.generate();
 
-  const shortUrl = `http://localhost:${process.env.PORT}/${shortCode}`;
+  const shortUrl = `https://url-shortner-page.onrender.com/${shortCode}`;
 
   //save to database
   // const newUrl = await Url.create({shortCode, longUrl})
